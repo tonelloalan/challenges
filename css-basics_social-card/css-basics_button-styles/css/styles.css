@@ -30,6 +30,11 @@ button {
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  border-radius: 2rem;
+  background-color: gold;
+  color: goldenrod;
+  font-size: large;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 

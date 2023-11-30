@@ -34,7 +34,6 @@ button {
   background-color: gold;
   color: goldenrod;
   font-size: large;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 
@@ -48,10 +47,20 @@ button {
 }
 
 .button3 {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: large;
+  background-color: white;
+  color: black;
   /*Style me! You can test out changing the font, or font size, ...*/
 }
 
 .button4 {
+  border-radius: 2rem;
+  background-color: tomato;
+  color: whitesmoke;
+  font-size: larger;
+  box-shadow: 5px 5px 50px 10px rgba(246, 8, 8, 0.5);
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
 }
 

@@ -74,7 +74,13 @@ section {
 */
 
 .subtitle {
-  /* your solution */
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding: 1rem;
+  display: inline-block;
+}
+.fav {
+  border-color: orange;
 }
 
 /* ------- List ------- */

@@ -13,8 +13,25 @@ div {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+  font-size: medium;
+  background-color: white;
+}
+
+.text {
+  font-size: small;
+  background-color: white;
+}
+
+.handle {
+  font-size: smaller;
+  color: grey;
+  background-color: white;
+}
+
 img {
   border-radius: 10px;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
 }
 
 button {

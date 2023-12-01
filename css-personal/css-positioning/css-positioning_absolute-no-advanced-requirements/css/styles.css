@@ -68,4 +68,6 @@ main {
 
 .box--bottom-right {
   background-color: #1b4f72;
+  bottom: 0;
+  right: 0;
 }

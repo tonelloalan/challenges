@@ -44,7 +44,6 @@ main {
 
 .box--top-center {
   background-color: #85c1e9;
-  top: 0;
 }
 
 .box--top-right {
@@ -59,6 +58,8 @@ main {
 
 .box--bottom-left {
   background-color: #2874a6;
+  bottom: 0;
+  left: 0;
 }
 
 .box--bottom-center {

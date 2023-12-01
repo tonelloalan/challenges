@@ -22,8 +22,10 @@ body {
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
+  z-index: 4;
 }
 
 .header__text {
@@ -93,4 +95,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 115px;
+  left: 15px;
 }

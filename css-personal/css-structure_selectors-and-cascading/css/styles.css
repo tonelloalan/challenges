@@ -109,7 +109,7 @@ footer a {
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer p {
+footer .text {
   outline: 2px dashed red;
   color: #ffffff;
 }

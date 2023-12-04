@@ -267,11 +267,9 @@ width, etc. */
   .navbar {
     width: 1000px;
     margin: 0 auto;
-
   }
   .card-section {
     overflow-x: hidden;
-  }
   }
   body,
   .navbar,

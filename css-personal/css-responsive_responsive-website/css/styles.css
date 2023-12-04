@@ -259,6 +259,7 @@ width, etc. */
 /* Media Query Desktop */
 /* --- */
 @media (min-width: 1200px) {
-  .card-section {
-
-  }/* --- */
+ .product-card.--forest {
+  width: 100vw;
+ }
+  /* --- */

@@ -45,6 +45,8 @@ body {
 .tech-stack__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  gap: 10px;
 }
 
 .tech-stack__list-item {

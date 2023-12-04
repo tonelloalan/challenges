@@ -105,3 +105,9 @@ h1 {
     width: 400px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: var(--color-granite);
+  }
+}

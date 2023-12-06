@@ -71,11 +71,11 @@ body {
 }
 
 .element-2 {
-  /* Add styles here */
+  grid-column: 5 / 12;
 }
 
 .element-5 {
-  /* Add styles here */
+  grid-area: span 2 / span 2;
 }
 
 .element-8 {

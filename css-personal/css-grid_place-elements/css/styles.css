@@ -67,7 +67,7 @@ body {
 }
 
 .element-1 {
-  /* Add styles here */
+  grid-column: 3 / 5;
 }
 
 .element-2 {

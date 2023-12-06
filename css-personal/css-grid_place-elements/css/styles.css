@@ -79,7 +79,7 @@ body {
 }
 
 .element-8 {
-  /* Add styles here */
+  grid-area: span 2;
 }
 
 .element-spiced {

@@ -75,7 +75,7 @@ body {
 }
 
 .element-5 {
-  grid-area: span 2 / span 2;
+  grid-area: span 2 / span 3;
 }
 
 .element-8 {
@@ -83,7 +83,7 @@ body {
 }
 
 .element-spiced {
-  /* Add styles here */
+  grid-area: 1 / span 11;
 }
 
 .element-20 {

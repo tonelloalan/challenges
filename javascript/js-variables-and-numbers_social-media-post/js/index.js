@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const postTitle;
+const postText;
+const postLikes;
+const postCreator;
+const isReported;
 // --^-- write your code here --^--
 
 /*

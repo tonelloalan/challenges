@@ -22,5 +22,9 @@ const isReported;
 */
 
 // --v-- write your code here --v--
-
+console.log(postTitle);
+console.log(postText);
+console.log(postLikes);
+console.log(postCreator);
+console.log(isReported);
 // --^-- write your code here --^--

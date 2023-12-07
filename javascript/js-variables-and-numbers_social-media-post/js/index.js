@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const postTitle = "JS Basics";
+const postText = "This is a basic test of JS variables";
+const postLikes = 3;
+const postCreator = "Alan Tonello";
+const isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(postTitle);
+console.log(postText);
+console.log(postLikes);
+console.log(postCreator);
+console.log(isReported);
+
+console.log(postLikes + 1);
 
 // --^-- write your code here --^--

@@ -27,4 +27,7 @@ console.log(postText);
 console.log(postLikes);
 console.log(postCreator);
 console.log(isReported);
+
+console.log(postLikes + 1);
+
 // --^-- write your code here --^--

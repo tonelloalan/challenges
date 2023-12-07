@@ -1,0 +1,1 @@
+let startingBalance = 100;

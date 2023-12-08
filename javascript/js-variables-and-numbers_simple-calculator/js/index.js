@@ -85,10 +85,14 @@ increaseByFiveButton.addEventListener("click", () => {
 
 decreaseByOneButton.addEventListener("click", () => {
   // 7. Decrease the value of "operand1" by 1. Log the new value to the console.
+  const decreaseOneResult = operand1--;
+  console.log("decreaseOneResult:", decreaseOneResult);
 });
 
 decreaseByFiveButton.addEventListener("click", () => {
   // 8. Decrease the value of "operand1" by 5. Log the new value to the console.
+  const decreaseFiveResult = (operand1 -= 5);
+  console.log("decreaseFiveResult:", decreaseFiveResult);
 });
 
 multiplyByTwoButton.addEventListener("click", () => {

@@ -8,7 +8,7 @@ const exampleArray = [34, "string"];
 // EXERCISE 2
 // Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
-const nestedArray = ["example", 10, true];
+const nestedArray = ["example", 10, true, ["a", "b"]];
 
 // EXERCISE 3
 // Change the value of firstNumber to equal the first value of the numbers array using bracket notation.

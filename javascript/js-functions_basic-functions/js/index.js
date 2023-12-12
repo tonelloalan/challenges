@@ -11,8 +11,8 @@ console.clear();
 // --v-- write your code here --v--
 const bookTitle = "The Lord of the Javascript";
 const bookAuthor = "Mario";
-const bookRating = 4.2;
-const bookSales = 120;
+let bookRating = 4.2;
+let bookSales = 120;
 // --^-- write your code here --^--
 
 /*
@@ -28,6 +28,14 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log("Title:", bookTitle);
+console.log("Author:", bookAuthor);
+console.log("Rating:", bookRating);
+console.log("Sales:", bookSales);
+
+bookRating = bookRating + 0.5;
+bookSales = bookSales + 15;
+
 console.log("Title:", bookTitle);
 console.log("Author:", bookAuthor);
 console.log("Rating:", bookRating);

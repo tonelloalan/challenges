@@ -7,10 +7,11 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+logText; // This is acting like a non-declared variable, so no value is displayed. If we want to refer to the function, we'd have to write "logText()", either before or after the function itself being declared, as function declarations are hoisted to the top of the scope.
+logText(); // Now the function should display the text inside the console.
 
 function logText() {
-  console.log("This text does not appear. Why?");
+  console.log("This text shoudl appear now.");
 }
 
 console.log("-------------");

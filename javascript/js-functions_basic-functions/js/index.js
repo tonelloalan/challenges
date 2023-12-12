@@ -28,16 +28,17 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
-console.log("Title:", bookTitle);
-console.log("Author:", bookAuthor);
-console.log("Rating:", bookRating);
-console.log("Sales:", bookSales);
+logBookData();
 
 bookRating = bookRating + 0.5;
 bookSales = bookSales + 15;
 
 logBookData();
 
+bookSales = bookSales + 5;
+bookSales = bookSales + 3;
+
+logBookData();
 // --^-- write your code here --^--
 
 /*

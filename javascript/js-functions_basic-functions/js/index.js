@@ -36,10 +36,7 @@ console.log("Sales:", bookSales);
 bookRating = bookRating + 0.5;
 bookSales = bookSales + 15;
 
-console.log("Title:", bookTitle);
-console.log("Author:", bookAuthor);
-console.log("Rating:", bookRating);
-console.log("Sales:", bookSales);
+logBookData();
 
 // --^-- write your code here --^--
 
@@ -52,5 +49,10 @@ console.log("Sales:", bookSales);
 */
 
 // --v-- write your code here --v--
-
+function logBookData() {
+  console.log("Title:", bookTitle);
+  console.log("Author:", bookAuthor);
+  console.log("Rating:", bookRating);
+  console.log("Sales:", bookSales);
+}
 // --^-- write your code here --^--

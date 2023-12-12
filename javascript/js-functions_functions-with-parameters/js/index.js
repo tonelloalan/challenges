@@ -36,16 +36,13 @@ console.log("Exercise 2:");
 // greetBob();
 // greetMary();
 
+// --v-- write your code here --v--
+
 function greet(name) {
   console.log("Welcome, " + name + ", good to see you again!");
 }
 
 greet("Alan");
-
-// --v-- write your code here --v--
-
-function greet() {}
-
 // --^-- write your code here --^--
 
 console.log("-------------");

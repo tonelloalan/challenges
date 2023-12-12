@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const bookTitle;
+const bookAuthor;
+const bookRating;
+const bookSales;
 // --^-- write your code here --^--
 
 /*

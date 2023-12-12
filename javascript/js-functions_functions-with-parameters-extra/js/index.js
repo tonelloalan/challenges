@@ -22,7 +22,8 @@ printSquare(5);
 // Uncomment the following function calls and implement the function printCircumference
 
 function printCircumference(circleRadius) {
-  console.log(2 * Math.PI * circleRadius);
+  const circleRadiusResult = 2 * Math.PI * circleRadius; // assigned the circleRadius to a variable
+  console.log(circleRadiusResult.toFixed(2)); // modified the value to only display two characters after the "."
 }
 
 printCircumference(4);

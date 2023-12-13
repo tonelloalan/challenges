@@ -11,11 +11,11 @@
   </head>
   <body>
     <section>
-      <form>
+      <form aria-labelledby="information">
         <p>
           We want to get to know you! Please enter your personal information.
         </p>
-        <fieldset>
+        <fieldset aria-describedby="personalInformation">
           <legend for="personalInformation">Personal Information</legend>
           <label for="firstname">First Name:</label>
           <input name="firstname" id="firstname" />
@@ -28,12 +28,18 @@
           Can you tell us a little bit more? We want to annoy you with unwanted
           ads.
         </p>
-        <fieldset>
+        <fieldset aria-describedby="furtherinformation">
           <legend for="furtherinformation">Further Information</legend>
           <label for="favoritecolor">Favorite Color:</label>
-          <input type="color" name="favoritecolor" id="favoritecolor" />
-          <label for="favoritepet">Favorite Color:</label>
+          <input
+            type="color"
+            name="favoritecolor"
+            id="favoritecolor"
+            value="#3f0097"
+          />
+          <label for="favoritepet">What's your favorite pet?</label>
           <select name="favoritepet" id="favoritepet">
+            <option value="chooseoptio">--Please choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="bird">Bird</option>
@@ -41,6 +47,8 @@
             <option value="unicorn">Unicorn</option>
           </select>
         </fieldset>
+        <br />
+        <input class="button" type="submit" value="Submit" />
       </form>
     </section>
   </body>

@@ -2,9 +2,9 @@
 
 Switch the input values of the two input fields when clicking the button
 
-- [ ] Add a second input element to the index.html
-- [ ] Assign the second input element to a variable
-- [ ] Add a third button (a switch button) to the index.html
+- [x] Add a second input element to the index.html
+- [x] Assign the second input element to a variable
+- [x] Add a third button (a switch button) to the index.html
 - [ ] Assign the third button to a variable
 - [ ] Make sure that when the switch button is clicked, the values of the two input fields are being switched
 - [ ] Make sure that all three buttons work on both input fields

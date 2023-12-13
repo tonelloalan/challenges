@@ -24,7 +24,16 @@ button.addEventListener("click", () => {
 */
 
 // CHALLENGE 2
-button.addEventListener("click", () => {
+/* button.addEventListener("click", () => {
   const firstValue = firstInput.value;
   secondInput.value = firstValue.toUpperCase();
+}); */
+
+// CHALLENGE 3
+button.addEventListener("click", () => {
+  const firstValue = firstInput.value;
+  const secondValue = secondInput.value;
+
+  firstInput.value = secondValue;
+  secondInput.value = firstValue;
 });

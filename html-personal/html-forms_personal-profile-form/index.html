@@ -10,6 +10,46 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section>
+      <form aria-labelledby="information">
+        <p>
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset aria-describedby="personalInformation">
+          <legend for="personalInformation">Personal Information</legend>
+          <label for="firstname">First Name:</label>
+          <input name="firstname" id="firstname" />
+          <label for="lastname">Last Name:</label>
+          <input name="lastname" id="lastname" />
+          <label for="date">Your Birthday:</label>
+          <input type="date" name="birthday" id="birthday" />
+        </fieldset>
+        <p>
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset aria-describedby="furtherinformation">
+          <legend for="furtherinformation">Further Information</legend>
+          <label for="favoritecolor">Favorite Color:</label>
+          <input
+            type="color"
+            name="favoritecolor"
+            id="favoritecolor"
+            value="#3f0097"
+          />
+          <label for="favoritepet">What's your favorite pet?</label>
+          <select name="favoritepet" id="favoritepet">
+            <option value="chooseoptio">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="hamster">Hamster</option>
+            <option value="unicorn">Unicorn</option>
+          </select>
+        </fieldset>
+        <br />
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </section>
   </body>
 </html>

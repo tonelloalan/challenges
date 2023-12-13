@@ -10,3 +10,8 @@ Convert the input value to uppercase when clicking the button
 Hint: Access the value by using `.value` on the input element
 
 */
+
+const inputValue = document.getElementById("first-input").value;
+console.log(inputValue);
+
+function 

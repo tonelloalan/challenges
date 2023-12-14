@@ -18,4 +18,5 @@ button.addEventListener("click", () => {
   let inputValue = input.value;
   // console.log(inputValue);
   const upperCasedValue = inputValue.toUpperCase();
+  input.value = upperCasedValue;
 });

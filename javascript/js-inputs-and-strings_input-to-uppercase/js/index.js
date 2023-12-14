@@ -16,5 +16,6 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
   let inputValue = input.value;
-  console.log(inputValue);
+  // console.log(inputValue);
+  const upperCasedValue = inputValue.toUpperCase();
 });

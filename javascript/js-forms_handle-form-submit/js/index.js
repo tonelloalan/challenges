@@ -1,9 +1,18 @@
 console.clear();
 
 const form = document.querySelector('[data-js="form"]');
+
 form.addEventListener("submit", (event) => {
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  console.log(data);
+
   event.preventDefault();
+
   const firstName = document.getElementById("first-name");
-  console.log("First name: " + firstName.value);
+
+  firstName.focus();
+
   event.target.reset();
 });

@@ -29,4 +29,3 @@ form.addEventListener("submit", (event) => {
   // eslint-disable-next-line no-alert
   alert("Form submitted");
 });
-g;

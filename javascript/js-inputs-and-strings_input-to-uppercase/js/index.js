@@ -14,4 +14,7 @@ Hint: Access the value by using `.value` on the input element
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 
-button.addEventListener("click", () => {});
+button.addEventListener("click", () => {
+  let inputValue = input.value;
+  console.log(inputValue);
+});

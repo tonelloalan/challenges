@@ -25,9 +25,27 @@ form.addEventListener("submit", (event) => {
   let result;
 
   // --v-- write your code here --v--
-  const numberA = document.getElementById("number-a").value;
-  const numberB = document.getElementById("number-b").value;
 
+  const numberA = parseFloat(form.elements.numberA.value);
+  const numberB = parseFloat(form.elements.numberB.value);
+
+  const operator = form.elements.operator.value;
+
+  if (operator === "addition") {
+    result = add(numberA, numberB);
+  }
+
+  if (operator === "subtraction") {
+    result = subtract(numberA, numberB);
+  }
+
+  if (operator === "multiplication") {
+    result = multiply(numberA, numberB);
+  }
+
+  if (operator === "division") {
+    result = divide(numberA, numberB);
+  }
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;

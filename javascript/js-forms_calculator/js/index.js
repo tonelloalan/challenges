@@ -33,17 +33,11 @@ form.addEventListener("submit", (event) => {
 
   if (operator === "addition") {
     result = add(numberA, numberB);
-  }
-
-  if (operator === "subtraction") {
+  } else if (operator === "subtraction") {
     result = subtract(numberA, numberB);
-  }
-
-  if (operator === "multiplication") {
+  } else if (operator === "multiplication") {
     result = multiply(numberA, numberB);
-  }
-
-  if (operator === "division") {
+  } else if (operator === "division") {
     result = divide(numberA, numberB);
   }
   // --^-- write your code here --^--

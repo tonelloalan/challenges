@@ -12,15 +12,13 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
+hideTosError();
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-  const checkbox = document.querySelector('[data-js="tos"]');
 
-  checkbox.addEventListener("input", (event) => {
-    console.log(event.target.checked); // output: true or false
-  });
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert

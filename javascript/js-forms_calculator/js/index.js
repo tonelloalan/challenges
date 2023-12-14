@@ -25,6 +25,8 @@ form.addEventListener("submit", (event) => {
   let result;
 
   // --v-- write your code here --v--
+  const numberA = document.getElementById("number-a");
+  const numberB = document.getElementById("number-b");
 
   // --^-- write your code here --^--
 

@@ -40,3 +40,6 @@ newPostFooter.classList.add("post__footer");
 newPost.appendChild(newPostFooter); // Append the new post content to the new post section
 
 const newPostSpan = document.createElement("span");
+newPostSpan.classList.add("post__username");
+newPostFooter.appendChild(newPostSpan);
+newPostSpan.textContent = "@username";

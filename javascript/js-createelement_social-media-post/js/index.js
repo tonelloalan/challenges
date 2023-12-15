@@ -38,3 +38,5 @@ newPost.appendChild(newPostContent); // Append the new post content to the new p
 const newPostFooter = document.createElement("footer");
 newPostFooter.classList.add("post__footer");
 newPost.appendChild(newPostFooter); // Append the new post content to the new post section
+
+const newPostSpan = document.createElement("span");

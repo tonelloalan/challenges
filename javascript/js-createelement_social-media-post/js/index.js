@@ -18,8 +18,8 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 // 4. add the className to the p element [x]
 // 5. create a new footer element [x]
 // 6. add the className to the footer element [x]
-// 7. create a new span element [ ]
-// 8. add the className to the span element [ ]
+// 7. create a new span element [x]
+// 8. add the className to the span element [x]
 // 9. create a new button element [ ]
 // 10. add the className to the button element [ ]
 // 11. append the p element and the footer to the section [ ]
@@ -43,3 +43,5 @@ const newPostSpan = document.createElement("span");
 newPostSpan.classList.add("post__username");
 newPostFooter.appendChild(newPostSpan);
 newPostSpan.textContent = "@username";
+
+const newPostButton = document.createElement("button");

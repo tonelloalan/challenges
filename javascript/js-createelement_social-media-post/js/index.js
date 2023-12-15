@@ -20,11 +20,11 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 // 6. add the className to the footer element [x]
 // 7. create a new span element [x]
 // 8. add the className to the span element [x]
-// 9. create a new button element [ ]
-// 10. add the className to the button element [ ]
-// 11. append the p element and the footer to the section [ ]
-// 12. append span and button to the footer [ ]
-// 13. append the section to the body [ ]
+// 9. create a new button element [x]
+// 10. add the className to the button element [x]
+// 11. append the p element and the footer to the section [x]
+// 12. append span and button to the footer [x]
+// 13. append the section to the body [x]
 
 const newPost = document.createElement("section"); // assigned the post container section to  a variable
 newPost.classList.add("post"); // added post class (style) to the new variable from  a class list
@@ -48,3 +48,4 @@ const newPostButton = document.createElement("button");
 newPostButton.classList.add("post__button");
 newPostFooter.appendChild(newPostButton);
 newPostButton.textContent = "♥ Like";
+newPostButton.addEventListener("click", handleLikeButtonClick); // add event listener to the newly created button, connecting the handleLikeButtonClick function. Now, whenever the new like button is clicked, the function will toggle the "post__button--liked" class to like it does for the first post.

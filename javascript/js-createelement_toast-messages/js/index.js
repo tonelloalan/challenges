@@ -14,4 +14,5 @@ addButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   // Exercise: Clear the stack of toast messages
+  toastContainer.innerHTML = ""; // targeting the toastContainer element and clearing all HTML inserted in it.
 });

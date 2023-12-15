@@ -46,3 +46,5 @@ newPostSpan.textContent = "@username";
 
 const newPostButton = document.createElement("button");
 newPostButton.classList.add("post__button");
+newPostFooter.appendChild(newPostButton);
+newPostButton.textContent = "♥ Like";

@@ -1,6 +1,6 @@
 console.clear();
 
-const form = document.querySelector('[data-js="form"]');
+const form = document.querySelector('[data-js="form"]'); // targeted the form item and assigned its value to a variable
 
 form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
@@ -16,3 +16,5 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
 });
+
+console.log(form); // log all data into the console

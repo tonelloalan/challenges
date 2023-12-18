@@ -19,4 +19,11 @@ const programmingLanguages = [
 
 // --v-- write/change code here --v--
 
+// using the for ... of iteration to list all the items in the programmingLanguages object, and append them to a new creted element "li", and finally append as child of the main "ol" element.
+for (const language of programmingLanguages) {
+  const li = document.createElement("li");
+  li.textContent = language;
+  ol.appendChild(li);
+}
+
 // --^-- write/change code here --^--

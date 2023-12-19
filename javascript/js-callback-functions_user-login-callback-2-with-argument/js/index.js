@@ -12,4 +12,9 @@ function showWelcomeMessage(userName) {
 }
 
 // call "handleUserLogin" and pass your callback function as the first argument
-handleUserLogin(showWelcomeMessage, "Jane Doe");
+handleUserLogin(showWelcomeMessage);
+
+// call "handleUserLogin" again with an anonymous function as the callback
+handleUserLogin((userName) => {
+  console.log(`Welcome ${userName}! You are logged in now.`);
+});

@@ -10,3 +10,6 @@ showWelcomeMessage() {
   console.log("Welcome! You are logged in now.");
 }
 handleUserLogin(showWelcomeMessage);
+handleUserLogin(showWelcomeMessage, () => {
+  
+})

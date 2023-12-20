@@ -35,7 +35,13 @@ const recipes = [
  1: `map` exercises
 */
 
-const onlyTitles = null; // ['Crepes', ...]
+const onlyTitles = recipes.map((recipe) => {
+  // The parameter 'recipe' represents each individual recipe object in the array
+
+  // Extracting the 'title' property from the current recipe object
+  return recipe.title;
+}); // ['Crepes', ...]
+console.log(onlyTitles); // The 'onlyTitles' array now contains only the titles of the recipes
 
 const titlesWithDuration = null; // ['Crepes (60min)', ...]
 

@@ -19,22 +19,19 @@ const colors = [
   "#A5A5A5",
 ];
 
-// add new element inside the functio with a color argument
+// task 1: add new element inside the functio with a color argument
 colors.forEach((color) => {
   const colorBox = document.createElement("div"); // create element
   colorBox.classList.add("color-box"); // add class to element
+  colorBox.style.backgroundColor = color; // add iterated hex code as background color for the boxes
   document.body.append(colorBox); // append to body
 });
 
-// const colorBox = document.createElement("div"); // create element
-// colorBox.classList.add("color-box"); // add class to element
-// document.body.append(colorBox); // append to body
-
-// example from handout:
-
-// const pets = ["bird", "cat", "dog", "ferret", "fish"];
-// pets.forEach((pet) => {
-//   const petElement = document.createElement("p");
-//   petElement.textContent = pet;
-//   document.body.append(petElement);
-// });
+// task 2: create new function
+// function renderColorBox() {
+//   {
+//     const colorBox = document.createElement("div"); // create element
+//     colorBox.classList.add("color-box"); // add class to element
+//     document.body.append(colorBox); // append to body
+//   }
+// }

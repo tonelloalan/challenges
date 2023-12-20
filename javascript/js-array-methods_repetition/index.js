@@ -92,7 +92,13 @@ const allRecipesWithMoreThan2Servings = recipes.filter((recipe) => {
 // The 'allRecipesWithMoreThan2Servings' array now contains only the desired recipes with more than 2 servings
 console.log(allRecipesWithMoreThan2Servings);
 
-const allRecipesWithTitlesLongerThan12Characters = null;
+// Using filter() to get recipes that have a title with more than 12 characters
+const allRecipesWithTitlesLongerThan12Characters = recipes.filter((recipe) => {
+  // Checking if the 'title' length property of the current recipe has more than 12 characters
+  return recipe.title.length > 12;
+});
+// The 'allRecipesWithTitlesLongerThan12Characters' array now contains only the desired recipes with more than 12 characters on their 'title' length
+console.log(allRecipesWithTitlesLongerThan12Characters);
 
 export {
   onlyTitles,

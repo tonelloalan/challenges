@@ -84,7 +84,13 @@ const recipesThatOnlyTake60minutesOrLess = recipes.filter((recipe) => {
 // The 'recipesThatOnlyTake60minutesOrLess' array now contains only the desired recipes
 console.log(recipesThatOnlyTake60minutesOrLess);
 
-const allRecipesWithMoreThan2Servings = null;
+// Using filter() to get recipes that have more than 2 servings
+const allRecipesWithMoreThan2Servings = recipes.filter((recipe) => {
+  // Checking if the 'servings' property of the current recipe is more than 2
+  return recipe.servings > 2;
+});
+// The 'allRecipesWithMoreThan2Servings' array now contains only the desired recipes with more than 2 servings
+console.log(allRecipesWithMoreThan2Servings);
 
 const allRecipesWithTitlesLongerThan12Characters = null;
 

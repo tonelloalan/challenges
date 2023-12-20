@@ -43,7 +43,13 @@ const onlyTitles = recipes.map((recipe) => {
 }); // ['Crepes', ...]
 console.log(onlyTitles); // The 'onlyTitles' array now contains only the titles of the recipes
 
-const titlesWithDuration = null; // ['Crepes (60min)', ...]
+const titlesWithDuration = recipes.map((recipe) => {
+  // The parameter 'recipe' represents each individual recipe object in the array
+
+  // Extracting the 'title' and 'duration' properties from the current recipe object
+  return `${recipe.title} (${recipe.duration})`;
+}); // ['Crepes (60min)', ...]
+console.log(titlesWithDuration); // The 'onlyTitles' array now contains the titles and duration of the recipes
 
 const timePerServing = null; // [20, 10, 432, 12]
 

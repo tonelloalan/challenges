@@ -27,11 +27,14 @@ colors.forEach((color) => {
   document.body.append(colorBox); // append to body
 });
 
-// task 2: create new function
-// function renderColorBox() {
-//   {
-//     const colorBox = document.createElement("div"); // create element
-//     colorBox.classList.add("color-box"); // add class to element
-//     document.body.append(colorBox); // append to body
-//   }
-// }
+// task 2: create new function (adding "color" parameter)
+function renderColorBox(color) {
+  {
+    const colorBox = document.createElement("div"); // create element
+    colorBox.classList.add("color-box"); // add class to element
+    colorBox.style.backgroundColor = color; // add iterated hex code as background color for the boxes
+    document.body.append(colorBox); // append to body
+  }
+}
+
+colors.forEach(renderColorBox); // Use forEach method with renderColorBox to create the color boxes a second time

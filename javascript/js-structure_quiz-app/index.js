@@ -1,3 +1,5 @@
+import Bookmark from "./components/Bookmark/Bookmark.js";
+
 // Store the cards in a global state
 const cards = [
   {

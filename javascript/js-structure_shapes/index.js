@@ -1,3 +1,5 @@
+import Circle from "./components/Circle/Circle.js";
+
 // import function randomcolor
 import { getRandomColor } from "./utils/randomColor.js";
 
@@ -11,15 +13,17 @@ const square = document.createElement("div");
 square.classList.add("square");
 square.addEventListener("click", () => {
   // square.style.backgroundColor = "#ccc";
-  square.style.backgroundColor = `${getRandomColor()}`; // use function getRandomColor inside all three event listeners
+  square.style.backgroundColor = getRandomColor(); // use function getRandomColor inside all three event listeners
 });
 
 const pentagon = document.createElement("div");
 pentagon.classList.add("pentagon");
 pentagon.addEventListener("click", () => {
   // pentagon.style.backgroundColor = "#ccc";
-  pentagon.style.backgroundColor = `${getRandomColor()}`; // use function getRandomColor inside all three event listeners
+  pentagon.style.backgroundColor = getRandomColor(); // use function getRandomColor inside all three event listeners
 });
 
 // root.append(circle, square, pentagon);
-root.append(circleElement, square, pentagon); // append the element to the root element
+const circle = Circle(getRandomColor); // call the function and save returned value to a variable
+
+root.append(circle, square, pentagon); // append the element to the root element

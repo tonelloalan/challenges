@@ -1,23 +1,23 @@
+import Circle from "./components/Circle/Circle.js";
+import Pentagon from "./components/Pentagon/Pentagon.js";
+import Square from "./components/Square/Square.js";
+
+// import function randomcolor
+import { getRandomColor } from "./utils/randomColor.js";
+
 console.clear();
 
 const root = document.getElementById("root");
 
-const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  circle.style.backgroundColor = "#ccc";
-});
+// removed circle function and moved it to circle folder
 
-const square = document.createElement("div");
-square.classList.add("square");
-square.addEventListener("click", () => {
-  square.style.backgroundColor = "#ccc";
-});
+// removed square function and moved it to square folder
 
-const pentagon = document.createElement("div");
-pentagon.classList.add("pentagon");
-pentagon.addEventListener("click", () => {
-  pentagon.style.backgroundColor = "#ccc";
-});
+// removed pentagon function and moved it to pentagon folder
 
-root.append(circle, square, pentagon);
+// root.append(circle, square, pentagon);
+const circle = Circle(getRandomColor); // call the function and save returned value to a variable
+const pentagon = Pentagon(getRandomColor); // call the function and save returned value to a variable
+const square = Square(getRandomColor); // call the function and save returned value to a variable
+
+root.append(circle, square, pentagon); // append the element to the root element

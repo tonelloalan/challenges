@@ -5,18 +5,7 @@ console.clear();
 
 const root = document.getElementById("root");
 
-// wrap the creation of the circle element including the addEventListener into a separate function starting with a capital letter, e.g. Circle
-function Circle() {
-  const circle = document.createElement("div");
-  circle.classList.add("circle");
-  circle.addEventListener("click", () => {
-    // circle.style.backgroundColor = "#ccc";
-    circle.style.backgroundColor = `${getRandomColor()}`; // use function getRandomColor inside all three event listeners
-  });
-  return circle; // return the element
-}
-
-const circleElement = Circle(); // call the function and save returned value to a variable
+// removed circle function and moved it to circle folder
 
 const square = document.createElement("div");
 square.classList.add("square");

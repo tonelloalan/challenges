@@ -27,7 +27,7 @@ export default function launch() {
   // fueling
   fuel();
 
-  // countdown
+  // countdown length is 5, calling it as agreed
   countdown();
   countdown();
   countdown();

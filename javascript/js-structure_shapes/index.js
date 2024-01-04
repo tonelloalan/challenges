@@ -13,6 +13,7 @@ function Circle() {
     // circle.style.backgroundColor = "#ccc";
     circle.style.backgroundColor = `${getRandomColor()}`; // use function getRandomColor inside all three event listeners
   });
+  return circle; // return the element
 }
 
 const square = document.createElement("div");

@@ -19,7 +19,7 @@ import { deployPayload } from "../js/core/deploy.js";
 import { NFSAT, FISHSAT } from "../js/payload/satellites.js";
 
 // Define the launch function as the default export
-function launch() {
+export default function launch() {
   // load payload
   loadPayload(NFSAT);
   loadPayload(FISHSAT);
@@ -33,4 +33,10 @@ function launch() {
   countdown();
   countdown();
   countdown();
+
+  // liftoff
+  liftoff();
+
+  // deploy payload
+  deployPayload();
 }

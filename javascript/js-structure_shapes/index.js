@@ -32,4 +32,5 @@ pentagon.addEventListener("click", () => {
   pentagon.style.backgroundColor = `${getRandomColor()}`; // use function getRandomColor inside all three event listeners
 });
 
-root.append(circle, square, pentagon);
+// root.append(circle, square, pentagon);
+root.append(circleElement, square, pentagon); // append the element to the root element

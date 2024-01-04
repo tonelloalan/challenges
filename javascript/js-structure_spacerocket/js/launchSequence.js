@@ -23,4 +23,14 @@ function launch() {
   // load payload
   loadPayload(NFSAT);
   loadPayload(FISHSAT);
+
+  // fueling
+  fuel();
+
+  // countdown
+  countdown();
+  countdown();
+  countdown();
+  countdown();
+  countdown();
 }

@@ -8,3 +8,6 @@ import { fuel } from "../js/core/fuel.js";
 
 // step 3: countdown
 import { countdown } from "../js/core/countdown.js";
+
+// step 4: liftoff
+import { liftoff } from "../js/core/liftoff.js";

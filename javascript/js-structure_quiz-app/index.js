@@ -2,6 +2,7 @@ import Bookmark from "./components/Bookmark/Bookmark.js";
 import Card from "./components/Card/Card.js";
 import CardList from "./components/CardList/CardList.js";
 import Form from "./components/Form/Form.js";
+import Header from "./components/Header/Header.js";
 export { cards };
 
 // Store the cards in a global state
@@ -28,16 +29,6 @@ const cards = [
     isBookmarked: false,
   },
 ];
-
-function Header() {
-  const header = document.createElement("header");
-  header.classList.add("header");
-  header.innerHTML = /* html */ `
-	  <h1 class="header__title">Quiz-App</h1>
-	`;
-
-  return header;
-}
 
 // moved function Bookmark to its own folder
 // moved function Card to its own folder

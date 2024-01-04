@@ -16,6 +16,8 @@ function Circle() {
   return circle; // return the element
 }
 
+const circleElement = Circle(); // call the function and save returned value to a variable
+
 const square = document.createElement("div");
 square.classList.add("square");
 square.addEventListener("click", () => {

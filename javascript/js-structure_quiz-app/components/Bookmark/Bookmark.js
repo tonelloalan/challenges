@@ -1,4 +1,4 @@
-// movde function bookmark into this folder and exported as default
+// moved function bookmark into this folder and exported as default
 
 export default function Bookmark(props) {
   const bookmark = document.createElement("button");

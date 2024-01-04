@@ -16,5 +16,4 @@ import { liftoff } from "../js/core/liftoff.js";
 import { deployPayload } from "../js/core/deploy.js";
 
 // extra steps: import NFSAT and FISHSAT
-import { NFSAT } from "../js/payload/satellites.js";
-import { FISHSAT } from "../js/payload/satellites.js";
+import { NFSAT, FISHSAT } from "../js/payload/satellites.js";

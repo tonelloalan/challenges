@@ -1,5 +1,6 @@
 import Bookmark from "./components/Bookmark/Bookmark.js";
 import Card from "./components/Card/Card.js";
+import CardList from "./components/CardList/CardList.js";
 
 // Store the cards in a global state
 const cards = [
@@ -25,6 +26,8 @@ const cards = [
     isBookmarked: false,
   },
 ];
+
+export { cards };
 
 function Header() {
   const header = document.createElement("header");
@@ -110,18 +113,8 @@ function Form() {
 }
 
 // moved function Bookmark to its own folder
-
-function CardList() {
-  const cardList = document.createElement("section");
-  cardList.classList.add("card-list");
-
-  cards.forEach((card) => {
-    const cardElement = Card(card);
-    cardList.append(cardElement);
-  });
-
-  return cardList;
-}
+// moved function Card to its own folder
+// moved function CardList to its own folder
 
 function App() {
   const app = document.createElement("main");

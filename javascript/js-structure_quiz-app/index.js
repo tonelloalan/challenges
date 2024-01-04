@@ -1,6 +1,7 @@
 import Bookmark from "./components/Bookmark/Bookmark.js";
 import Card from "./components/Card/Card.js";
 import CardList from "./components/CardList/CardList.js";
+export { cards };
 
 // Store the cards in a global state
 const cards = [
@@ -26,8 +27,6 @@ const cards = [
     isBookmarked: false,
   },
 ];
-
-export { cards };
 
 function Header() {
   const header = document.createElement("header");

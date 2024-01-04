@@ -1,5 +1,7 @@
 // import function bookmark
 import Bookmark from "../Bookmark/Bookmark.js";
+// import variable bookmark
+import { cards } from "/index.js";
 
 // moved function card into this folder and exported as default
 

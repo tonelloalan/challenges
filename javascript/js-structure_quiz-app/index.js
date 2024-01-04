@@ -36,6 +36,7 @@ const cards = [
 // moved function CardList to its own folder
 // moved function Form to its own folder
 // moved function Header to its own folder
+// moved function App to its own folder
 
 // The render function renders the app to the DOM
 function render() {

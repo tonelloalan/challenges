@@ -11,3 +11,10 @@ import { countdown } from "../js/core/countdown.js";
 
 // step 4: liftoff
 import { liftoff } from "../js/core/liftoff.js";
+
+// step 5: import deploy
+import { deployPayload } from "../js/core/deploy.js";
+
+// extra steps: import NFSAT and FISHSAT
+import { NFSAT } from "../js/payload/satellites.js";
+import { FISHSAT } from "../js/payload/satellites.js";

@@ -30,7 +30,7 @@ startRaceButton.addEventListener("click", async () => {
 
   // --^-- write your code here --^--
 
-  startRaceButton.removeAttribute("disabled");
+  startRaceButton.removeAttribute("disabled"); // this button will only get original color back when the previous function is finished, since we added 'await' before the last function
 });
 
 /**

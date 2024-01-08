@@ -34,8 +34,8 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
-const firstCard = Card(EXAMPLE_DATA);
-renderElement(firstCard);
+// const firstCard = Card(EXAMPLE_DATA);
+// renderElement(firstCard);
 
 fetchDataAndRender();
 
@@ -46,23 +46,10 @@ async function fetchDataAndRender() {
   const swData = await swApi.json(); // request data
   let swChar = swData.results;
   console.log(swChar); // display characters
-  swChar.forEach((char) => console.log(char)); // for each char (character) of the array Results (which includes all characters), console log the character of each index
+
+  swChar.forEach((card) => {
+    // for each character (swChar) of the array Results (which includes all characters), create new card and render it to the html
+    let newCard = Card(card); // create new card
+    renderElement(newCard); // render it to the html
+  });
 }
-
-/* 
-const array1 = ['a', 'b', 'c'];
-
-array1.forEach((element) => console.log(element));
-
-// Expected output: "a"
-// Expected output: "b"
-// Expected output: "c"
- */
-
-/* 
-async function fetchData() {
-  const response = await fetch("/url/to/something");
-  const data = await response.json();
-  return data;
-}
-*/

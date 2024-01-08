@@ -41,6 +41,14 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  const swApi = await fetch("https://swapi.dev/api/people"); // fetching data from Star Wars API
 }
+
+/* 
+async function fetchData() {
+  const response = await fetch("/url/to/something");
+  const data = await response.json();
+  return data;
+}
+*/

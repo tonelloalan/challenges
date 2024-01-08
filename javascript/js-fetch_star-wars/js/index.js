@@ -43,6 +43,8 @@ fetchDataAndRender();
 
 async function fetchDataAndRender() {
   const swApi = await fetch("https://swapi.dev/api/people"); // fetching data from Star Wars API
+  const swData = await swApi.json(); // request data
+  console.log(swData); // display data
 }
 
 /* 

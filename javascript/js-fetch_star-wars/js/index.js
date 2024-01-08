@@ -44,8 +44,20 @@ fetchDataAndRender();
 async function fetchDataAndRender() {
   const swApi = await fetch("https://swapi.dev/api/people"); // fetching data from Star Wars API
   const swData = await swApi.json(); // request data
-  console.log(swData); // display data
+  let swChar = swData.results;
+  console.log(swChar); // display characters
+  swChar.forEach((char) => console.log(char)); // for each char (character) of the array Results (which includes all characters), console log the character of each index
 }
+
+/* 
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach((element) => console.log(element));
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c"
+ */
 
 /* 
 async function fetchData() {

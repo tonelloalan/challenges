@@ -10,8 +10,8 @@ async function fetchData() {
   console.log(data); // log entire data object
   console.log(data.count); // log different values of the data object
   console.log(data.results); // log different values of the data object
-
-  return data; // This second promise resolves with the actual data (payload) converted from JSON (a formatted string) to a JavaScript value or object. This result is stored in the variable named data.
+  const r2d2 = data.results[2]; // assign the value of R2D2 to a variable
+  console.log(r2d2.eye_color); // display R2D2's eye color
 }
 
 fetchData();

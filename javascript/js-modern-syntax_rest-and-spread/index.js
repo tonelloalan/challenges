@@ -34,11 +34,13 @@ Rest: ${restOfList}`);
 // c) Make sure you understand what the rest syntax does here.
 // d) Note that the optional chaining `?.` is used to prevent an error to happen.
 
-function add(allNumbers) {
+function add(...allNumbers) {
+  // added 3 dots before allNumbers to transform it into a rest syntax
   return allNumbers.reduce?.((a, b) => a + b);
 }
 
 export const sum = add(3, 2, 3, 2, 1, 2, 3, 4);
+console.log(add(3, 2, 3, 2, 1, 2, 3, 4));
 
 // EXERCISE 4
 // a) Below, the `add` function is called with an array as argument.

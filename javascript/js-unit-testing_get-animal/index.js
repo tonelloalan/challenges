@@ -1,7 +1,7 @@
 console.clear();
 
-export function getAnimal(animal) {
-  if (animal === "cats") {
+export function getAnimal(animalPluralName) {
+  if (animalPluralName === "cats") {
     return "I totally love cats!";
   }
 }

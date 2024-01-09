@@ -42,3 +42,13 @@ test("returns a positive value if called with two negative arguments", () => {
   const result = multiply(-2, -4);
   expect(result).toBeGreaterThan(0);
 });
+
+// test divide() function
+test("returns 3 if called with divide(9, 3)", () => {
+  const result = divide(9, 3);
+  expect(result).toBe(3);
+});
+test("returns 'You should not do this!' if called with 0 as second argument", () => {
+  const result = divide(9, 0);
+  expect(result).toBe("You should not do this!");
+});

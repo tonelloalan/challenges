@@ -3,9 +3,11 @@ console.clear();
 export function getAnimal(animalPluralName) {
   if (animalPluralName === "cats") {
     return "I totally love cats!";
+  } else {
+    return `I like ${animalPluralName}!`;
   }
 }
-console.log(getAnimal("cats"));
+console.log(getAnimal("dogs"));
 
 /*  
 import { getAnimal } from "./index.js";

@@ -7,7 +7,9 @@ console.clear();
 const item = ["Egg", 0.25, 12];
 
 export const [name, price, quantity] = item;
-console.log("name: ", name, "price: ", price, "quantity: ", quantity);
+console.log(`Name: ${name}
+Price: ${price}
+Quantity: ${quantity}`);
 
 // example: export const [value1, value2] = array;
 
@@ -15,6 +17,11 @@ console.log("name: ", name, "price: ", price, "quantity: ", quantity);
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
+export const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris;
+console.log("-------------------------------");
+console.log(`First name: ${firstNameOfChris}
+Last name: ${lastNameOfChris}
+Age: ${ageOfChris}`);
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".

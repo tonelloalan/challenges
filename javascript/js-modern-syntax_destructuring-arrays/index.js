@@ -38,6 +38,9 @@ Last name: ${lastNameOfAlex}`);
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
+export const [, , lastName] = students;
+console.log("-------------------------------");
+console.log(`Last name of the array: ${lastName}`);
 
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.

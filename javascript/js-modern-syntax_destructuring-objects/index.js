@@ -52,3 +52,8 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+
+const { lastName: personLastName, ...moreInformation } = person;
+console.log("----------------");
+console.log(personLastName);
+console.log(moreInformation);

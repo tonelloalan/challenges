@@ -60,7 +60,8 @@ console.log(
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+export const result = add(...values); // Spread values inside this function call
+console.log(result);
 
 function add(...values) {
   return values.reduce(

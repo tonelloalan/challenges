@@ -47,6 +47,12 @@ console.log(`Last name of the array: ${lastName}`);
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
+console.log("-------------------------------");
+console.log(
+  `${student1}, ${student2}, ${student3}, ${student4}, and ${student5}.`
+);
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.

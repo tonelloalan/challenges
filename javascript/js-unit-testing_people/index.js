@@ -27,7 +27,7 @@ export function findPersonById(people, id) {
 }
 
 export function isAnyoneOlderThan(people, age) {
-  return people.some((person) => person.age > 30);
+  return people.some((person) => person.age > age);
 }
 
 export function getFullNamesSortedByAge(people) {}

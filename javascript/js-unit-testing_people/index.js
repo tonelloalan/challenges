@@ -18,7 +18,9 @@ export function getPeopleNamesOlderThan(people, age) {
   return people.filter((person) => person.age > age);
 }
 
-export function getPeopleByLastName(people, lastName) {}
+export function getPeopleByLastName(people, lastName) {
+  return people.filter((person) => person.lastName === "Skywalker");
+}
 
 export function findPersonById(people, id) {}
 

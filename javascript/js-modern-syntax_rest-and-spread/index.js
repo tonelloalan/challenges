@@ -59,3 +59,6 @@ console.log(result);
 
 const fruits = ["apple", "banana", "orange", "papaya"];
 const anotherFruit = "cherry";
+
+export const allFruits = [anotherFruit, ...fruits];
+console.log(allFruits);

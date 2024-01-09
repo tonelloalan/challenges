@@ -28,6 +28,10 @@ Age: ${ageOfChris}`);
 // Make sure not to have unused variables.
 
 const personAlex = ["Alex", 12, "Main"];
+export const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
+console.log("-------------------------------");
+console.log(`First name: ${firstNameOfAlex}
+Last name: ${lastNameOfAlex}`);
 
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array

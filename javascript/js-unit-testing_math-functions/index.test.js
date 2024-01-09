@@ -25,4 +25,20 @@ test("returns a negative value if the second argument is greater than the first 
   expect(result).toBeLessThan(0);
 });
 
-//
+// test multiply() function
+test("returns 8 if called with multiply(2, 4)", () => {
+  const result = multiply(2, 4);
+  expect(result).toBe(8);
+});
+test("returns a negative value if only the first argument is negative", () => {
+  const result = multiply(-2, 4);
+  expect(result).toBeLessThan(0);
+});
+test("returns a negative value if only the second argument is negative", () => {
+  const result = multiply(2, -4);
+  expect(result).toBeLessThan(0);
+});
+test("returns a positive value if called with two negative arguments", () => {
+  const result = multiply(-2, -4);
+  expect(result).toBeGreaterThan(0);
+});

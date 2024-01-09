@@ -48,7 +48,8 @@ console.log(add(3, 2, 3, 2, 1, 2, 3, 4));
 // c) Make sure you understand what the spread syntax does here.
 
 const numbers = [3, 2, 1];
-export const result = add(numbers);
+export const result = add(...numbers); // added 3 dots before numbers variable to transform it into a spread syntax
+console.log(result);
 
 // EXERCISE 5
 // a) Create a variable `allFruits` which contains `anotherFruit` and `fruits`

@@ -13,6 +13,9 @@ const person = {
   phone: "12345",
 };
 
+export const { age, ...contact } = person;
+console.log(age, contact);
+
 // example: export const {value 1} = myObject;
 
 // EXERCISE 2

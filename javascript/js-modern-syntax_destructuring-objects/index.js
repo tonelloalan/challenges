@@ -10,6 +10,9 @@ const company = {
   location: "Berlin",
 };
 
+export const { name: courseName } = company;
+console.log(courseName);
+
 // example: export const {value1} = myObject;
 
 // EXERCISE 2

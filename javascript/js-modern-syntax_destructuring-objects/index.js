@@ -26,6 +26,7 @@ const user = { name: "John", years: 30 };
 
 const { name, years: age, isAdmin = false } = user;
 
+console.log("----------------");
 console.log(name, age, isAdmin);
 
 // EXERCISE 3
@@ -37,6 +38,10 @@ const dog = {
   breed: "husky",
   age: 5,
 };
+
+const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+console.log("----------------");
+console.log(dogName, dogBreed, dogAge);
 
 // EXERCISE 4
 // Extract the 'lastName' property from the person object as "personLastName".

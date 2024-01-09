@@ -82,7 +82,23 @@ test("getPeopleByAge() returns an array of people of a certain age", () => {
   ]);
 });
 
-test('getPeopleNamesOlderThan() returns an array of people full names older than a certain age, e.g. "Luke Skywalker"', () => {});
+test('getPeopleNamesOlderThan() returns an array of people full names older than a certain age, e.g. "Luke Skywalker"', () => {
+  const result = getPeopleNamesOlderThan(people, 30);
+  expect(result).toEqual([
+    {
+      id: 3,
+      firstName: "Max",
+      lastName: "Mustermann",
+      age: 32,
+    },
+    {
+      id: 4,
+      firstName: "Erika",
+      lastName: "Musterfrau",
+      age: 38,
+    },
+  ]);
+});
 
 test("getPeopleByLastName() returns an array of people of a certain lastName", () => {});
 

@@ -30,4 +30,7 @@ export function isAnyoneOlderThan(people, age) {
   return people.some((person) => person.age > age);
 }
 
-export function getFullNamesSortedByAge(people) {}
+export function getFullNamesSortedByAge(people) {
+  const sortedPeople = people.sort((a, b) => a.age - b.age);
+  return getFullNames(sortedPeople);
+}

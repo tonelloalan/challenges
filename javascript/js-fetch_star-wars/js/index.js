@@ -34,13 +34,22 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
-const firstCard = Card(EXAMPLE_DATA);
-renderElement(firstCard);
+// const firstCard = Card(EXAMPLE_DATA);
+// renderElement(firstCard);
 
 fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  const swApi = await fetch("https://swapi.dev/api/people"); // fetching data from Star Wars API
+  const swData = await swApi.json(); // request data
+  let swChar = swData.results;
+  console.log(swChar); // display characters
+
+  swChar.forEach((card) => {
+    // for each character (swChar) of the array Results (which includes all characters), create new card and render it to the html
+    let newCard = Card(card); // create new card
+    renderElement(newCard); // render it to the html
+  });
 }

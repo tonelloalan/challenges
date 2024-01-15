@@ -1,7 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-export default function App() {
+export default function App({ onClick }) {
+  function handleClick() {
+    console.log("handleClick() triggered me!");
+  }
   // return <h1>Replace me with your component!</h1>;
   return (
     <Button
@@ -11,7 +14,8 @@ export default function App() {
       color="red"
       bgColor="yellow"
       disabled={false}
-      onClick={() => console.log("You clicked me!")}
+      // onClick={() => console.log("You clicked me!")}
+      onClick={handleClick}
     />
   );
 }
@@ -25,9 +29,9 @@ function Button({
   text,
   onClick,
 }) {
-  function handleClick() {
-    console.log("handleClick() triggered me!");
-  }
+  // function handleClick() {
+  //   console.log("handleClick() triggered me!");
+  // }
   return (
     <button
       style={{
@@ -38,7 +42,8 @@ function Button({
       }}
       disabled={disabled}
       // onClick={onClick}
-      onClick={handleClick}
+      // onClick={handleClick}
+      onClick={onClick} // receive the onClick prop as a parameter.
     >
       {text}
     </button>

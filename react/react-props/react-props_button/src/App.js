@@ -10,11 +10,21 @@ export default function App() {
       text="Click me!"
       color="red"
       bgColor="yellow"
+      disabled={false}
+      onClick={() => console.log("You clicked me!")}
     />
   );
 }
 
-function Button({ padding, borderRadius, bgColor, color, disabled, text }) {
+function Button({
+  padding,
+  borderRadius,
+  bgColor,
+  color,
+  disabled,
+  text,
+  onClick,
+}) {
   return (
     <button
       style={{
@@ -22,8 +32,9 @@ function Button({ padding, borderRadius, bgColor, color, disabled, text }) {
         borderRadius: borderRadius,
         backgroundColor: bgColor,
         color: color,
-        display: disabled,
       }}
+      disabled={disabled}
+      onClick={onClick}
     >
       {text}
     </button>

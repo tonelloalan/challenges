@@ -25,6 +25,9 @@ function Button({
   text,
   onClick,
 }) {
+  function handleClick() {
+    console.log("handleClick() triggered me!");
+  }
   return (
     <button
       style={{
@@ -34,7 +37,8 @@ function Button({
         color: color,
       }}
       disabled={disabled}
-      onClick={onClick}
+      // onClick={onClick}
+      onClick={handleClick}
     >
       {text}
     </button>

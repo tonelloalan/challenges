@@ -1,4 +1,10 @@
+import bookmarkedStar from "../assets/resources/star-filled.svg";
+
 export default function FavouriteIconButton() {
   // return <img src={star} alt="Favorite" />;
-  return <p>This should be a favorite icon button</p>;
+  return (
+    <button>
+      <img src={bookmarkedStar} />
+    </button>
+  );
 }

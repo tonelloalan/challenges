@@ -5,7 +5,6 @@
 // function should have two tabs, each with a badge with the number of entries.
 
 import Tab from "./Tab";
-import Badge from "./Badge";
 
 export default function TabBar() {
   return (

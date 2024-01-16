@@ -1,3 +1,3 @@
 export default function SubmitButton() {
-  return <button>Create</button>;
+  return <button className="submitButton">Create</button>;
 }

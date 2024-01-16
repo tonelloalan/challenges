@@ -3,7 +3,7 @@ export default function TextArea({ labelText }) {
     <>
       <label>{labelText}</label>
       <br />
-      <textarea></textarea>
+      <textarea rows={5} className="textArea"></textarea>
     </>
   );
 }

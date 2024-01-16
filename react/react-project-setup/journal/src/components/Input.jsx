@@ -3,7 +3,7 @@ export default function Input({ labelText }) {
     <>
       <label>{labelText}</label>
       <br />
-      <input></input>
+      <input className="input"></input>
     </>
   );
 }

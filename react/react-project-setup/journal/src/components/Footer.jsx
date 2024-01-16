@@ -1,7 +1,7 @@
 export default function Footer({ title, date }) {
   return (
-    <h3>
+    <h5 className="footer">
       {title} — {date}
-    </h3>
+    </h5>
   );
 }

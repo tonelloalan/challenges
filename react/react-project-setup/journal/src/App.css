@@ -1,8 +1,28 @@
+@import url("./components/Badge.css");
+@import url("./components/EntriesSection.css");
+@import url("./components/Entry.css");
+@import url("./components/EntryDate.css");
+@import url("./components/EntryForm.css");
+@import url("./components/EntryList.css");
+@import url("./components/EntryText.css");
+@import url("./components/EntryTitle.css");
+@import url("./components/FavoriteIconButton.css");
+@import url("./components/Footer.css");
+@import url("./components/Header.css");
+@import url("./components/Input.css");
+@import url("./components/Main.css");
+@import url("./components/SubmitButton.css");
+@import url("./components/Tab.css");
+@import url("./components/TabBar.css");
+@import url("./components/TextArea.css");
+@import url("./assets/resources/colors.css");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+  background-color: rgb(243, 243, 243);
 }
 
 .logo {

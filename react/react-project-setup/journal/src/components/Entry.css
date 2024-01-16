@@ -1,0 +1,30 @@
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  text-align: left;
+  padding: 15px;
+}
+
+.button {
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  margin: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.09);
+}
+
+.entryDate {
+  align-self: center;
+}
+
+.entryText {
+  align-self: flex-start;
+}

@@ -1,0 +1,30 @@
+.entryForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.submitButton {
+  background-color: rgb(255, 123, 0);
+  align-self: center;
+  color: white;
+}
+
+.newEntryHeader {
+  align-self: center;
+}
+
+.textArea {
+  align-self: center;
+  width: 100%;
+  border-radius: 5px;
+  border: solid gray 1px;
+}
+
+.input {
+  align-self: center;
+  width: 100%;
+  border-radius: 5px;
+  border: solid gray 1px;
+}

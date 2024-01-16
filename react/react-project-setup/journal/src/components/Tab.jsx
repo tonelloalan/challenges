@@ -2,8 +2,9 @@ import Badge from "./Badge";
 
 export default function Tab({ badgeName, entriesNumber }) {
   return (
-    <>
-      <Badge badgeName={badgeName} entriesNumber={entriesNumber} />
-    </>
+    <div className="tab">
+      <span>{badgeName}</span>
+      <Badge entriesNumber={entriesNumber} />
+    </div>
   );
 }

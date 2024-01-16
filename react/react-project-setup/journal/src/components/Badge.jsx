@@ -1,7 +1,3 @@
-export default function Badge({ badgeName, entriesNumber }) {
-  return (
-    <>
-      {badgeName} {entriesNumber}
-    </>
-  );
+export default function Badge({ entriesNumber }) {
+  return <span className="badge">{entriesNumber}</span>;
 }

@@ -10,7 +10,7 @@ import Main from "./components/Main";
 function App() {
   return (
     <>
-      <Header title="Journal" />
+      <Header title="JOURNAL" />
       <Main />
       <Footer title="Journal App" date={2024} />
     </>

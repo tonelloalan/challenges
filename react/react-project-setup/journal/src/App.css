@@ -22,7 +22,7 @@
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
-  background-color: rgb(243, 243, 243);
+  background-color: var(--color-foam);
 }
 
 .logo {

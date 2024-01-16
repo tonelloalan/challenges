@@ -9,8 +9,9 @@
 
 .button {
   position: absolute;
+  background-color: var(--color-foam);
   right: 15px;
-  top: 60px;
+  top: 70px;
   margin: 15px;
   border-radius: 50%;
   width: 50px;
@@ -18,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.09);
 }
 
 .entryDate {
@@ -27,4 +27,6 @@
 
 .entryText {
   align-self: flex-start;
+  padding-bottom: 30px;
+  border-bottom: solid var(--color-water-10) 1px;
 }

@@ -1,0 +1,15 @@
+.tabBar {
+  display: flex;
+}
+.tab {
+  margin: 10px;
+  border: solid white 2px;
+}
+
+.badge {
+  background-color: var(--color-nemo-dark);
+  margin-left: 10px;
+  padding: 2px 10px;
+  border-radius: 15px;
+  color: var(--color-foam);
+}

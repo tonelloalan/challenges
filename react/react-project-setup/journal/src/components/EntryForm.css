@@ -6,9 +6,9 @@
 }
 
 .submitButton {
-  background-color: rgb(255, 123, 0);
+  background-color: var(--color-nemo);
   align-self: center;
-  color: white;
+  color: var(--color-foam);
 }
 
 .newEntryHeader {
@@ -19,12 +19,12 @@
   align-self: center;
   width: 100%;
   border-radius: 5px;
-  border: solid gray 1px;
+  border: solid var(--color-water-10) 1px;
 }
 
 .input {
   align-self: center;
   width: 100%;
   border-radius: 5px;
-  border: solid gray 1px;
+  border: solid var(--color-water-10) 1px;
 }

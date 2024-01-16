@@ -1,7 +1,7 @@
 h2 {
   display: block;
-  background-color: rgb(209, 209, 209);
+  background-color: var(--color-water-10);
   margin: 0;
   padding: 20px;
-  font-size: xxx-large;
+  font-size: xx-large;
 }

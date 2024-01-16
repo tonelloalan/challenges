@@ -8,9 +8,9 @@ import Tab from "./Tab";
 
 export default function TabBar() {
   return (
-    <>
-      <Tab badgeName="All Entries" entriesNumber={3} />
-      <Tab badgeName="Favorites" entriesNumber={1} />
-    </>
+    <div className="tabBar">
+      <Tab className="activeTab" badgeName="All Entries" entriesNumber={3} />
+      <Tab className="notActiveTab" badgeName="Favorites" entriesNumber={1} />
+    </div>
   );
 }

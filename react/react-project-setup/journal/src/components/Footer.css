@@ -1,7 +1,8 @@
 .footer {
+  width: 100%;
   display: block;
-  background-color: rgb(27, 27, 27);
-  color: white;
+  background-color: var(--color-granite);
+  color: var(--color-foam);
   margin: 0;
   padding: 20px;
 }

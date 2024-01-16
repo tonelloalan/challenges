@@ -1,10 +1,15 @@
 import Badge from "./Badge";
 
-export default function Tab({ badgeName, entriesNumber }) {
+export default function Tab({
+  badgeName,
+  entriesNumber,
+  tabStyle,
+  badgeStyle,
+}) {
   return (
-    <div className="tab">
+    <div className="tab" style={tabStyle}>
       <span>{badgeName}</span>
-      <Badge entriesNumber={entriesNumber} />
+      <Badge badgeStyle={badgeStyle} entriesNumber={entriesNumber} />
     </div>
   );
 }

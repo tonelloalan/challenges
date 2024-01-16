@@ -1,11 +1,9 @@
 import Badge from "./Badge";
 
-export default function Tab() {
+export default function Tab({ badgeName, entriesNumber }) {
   return (
     <>
-      <Badge badgeName="All Entries" entriesNumber={3} />
-      {"     "}
-      <Badge badgeName="Favorites" entriesNumber={1} />
+      <Badge badgeName={badgeName} entriesNumber={entriesNumber} />
     </>
   );
 }

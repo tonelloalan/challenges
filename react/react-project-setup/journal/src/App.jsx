@@ -5,17 +5,15 @@ import "./App.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Entry from "./components/Entry";
-import Tab from "./components/Tab";
 import EntryForm from "./components/EntryForm";
+import EntriesSection from "./components/EntriesSection";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
       <Header title="Journal" />
-      <EntryForm />
-      <Tab />
-      <Entry />
+      <Main />
       <Footer title="Journal App" date={2024} />
     </>
   );

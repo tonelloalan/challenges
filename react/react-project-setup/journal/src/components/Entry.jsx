@@ -13,3 +13,9 @@ export default function Entry() {
     </>
   );
 }
+
+// import:
+// title
+// date
+// text
+// favorite button

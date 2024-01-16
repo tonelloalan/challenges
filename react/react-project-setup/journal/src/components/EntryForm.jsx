@@ -14,3 +14,8 @@ export default function EntryForm() {
     </>
   );
 }
+
+// import
+// Input
+// TextArea
+// SubmitButton

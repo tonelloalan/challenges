@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
   background-color: var(--color-granite);
   color: var(--color-foam);
   margin: 0;

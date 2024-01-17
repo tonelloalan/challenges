@@ -1,10 +1,13 @@
 import React from "react";
 import "./styles.css";
+import { useState } from "react"; // import useState function
 
 export default function App() {
-  let code = "?";
+  // let code = "?";
+  let [code, setCode] = useState(""); // declare state variable and remove question mark from it
 
-  const validCode = "🐡🐠🐋";
+  // const validCode = "🐡🐠🐋";
+  const [validCode, setValidCode] = useState("🐡🐠🐋"); // declare state variable
 
   return (
     <div className="container">
@@ -12,7 +15,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode(code + "🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -22,7 +25,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode(code + "🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -32,7 +35,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode(code + "🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
@@ -44,7 +47,7 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          setCode("");
         }}
       >
         Reset
@@ -55,3 +58,5 @@ export default function App() {
     </div>
   );
 }
+
+// linke 57: if code is strictly equal to validCode, return it and p element with text

@@ -6,14 +6,24 @@
   background-color: var(--color-water);
 }
 
-.card--green {
-  background-color: lightgreen;
+.card--yellow {
+  background-color: lightyellow;
 }
 
 .card--red {
   background-color: lightcoral;
 }
 
-.card--yellow {
-  background-color: lightyellow;
+.card--green {
+  background-color: lightgreen;
 }
+
+.card--orange {
+  background-color: lightsalmon;
+}
+
+.card--purple {
+  background-color: rgb(175, 143, 175);
+}
+
+/* create new bgColors */

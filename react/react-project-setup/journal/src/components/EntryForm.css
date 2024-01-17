@@ -1,0 +1,33 @@
+.entryForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.submitButton {
+  min-width: 120px;
+  background-color: var(--color-nemo);
+  align-self: center;
+  color: var(--color-foam);
+}
+
+.newEntryHeader {
+  align-self: center;
+}
+
+.textArea {
+  align-self: center;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 5px;
+  border: solid var(--color-water-10) 1px;
+}
+
+.input {
+  align-self: center;
+  width: 100%;
+  min-height: 30px;
+  border-radius: 5px;
+  border: solid var(--color-water-10) 1px;
+}

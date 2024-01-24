@@ -19,7 +19,7 @@ export default function TheTwoTowers() {
         ))}
       </ul>
       <Image
-        src={`/images/${volume2.slug}.png`}
+        src={volume2.cover}
         alt={`${volume2.title}`}
         width={140}
         height={230}

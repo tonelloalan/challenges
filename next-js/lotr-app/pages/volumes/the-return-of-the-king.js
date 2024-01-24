@@ -19,7 +19,7 @@ export default function TheReturnOfTheKing() {
         ))}
       </ul>
       <Image
-        src={`/images/${volume3.slug}.png`}
+        src={volume3.cover}
         alt={`${volume3.title}`}
         width={140}
         height={230}

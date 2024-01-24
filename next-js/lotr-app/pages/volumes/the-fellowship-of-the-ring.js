@@ -20,7 +20,7 @@ export default function TheFellowshipOfTheRing() {
         ))}
       </ul>
       <Image
-        src={`/images/${volume1.slug}.png`}
+        src={volume1.cover}
         alt={`${volume1.title}`}
         width={140}
         height={230}

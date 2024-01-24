@@ -1,13 +1,12 @@
 import Link from "next/link.js";
 import { volumes } from "../../resources/lib/data.js";
+import Image from "next/image";
 
 export default function TheFellowshipOfTheRing() {
   const volume1 = volumes[0];
   return (
     <>
-      <Link href="/volumes">All Volumes</Link>
-      <Link href="/volumes">Previous</Link>
-      <Link href={`/volumes/${volumes[1].slug}`}>Next</Link>
+      <Link href="/volumes">← All Volumes</Link>
       <h1>{volumes[0].title}</h1>
       <p>{volumes[0].description}</p>
       <ul>
@@ -19,6 +18,8 @@ export default function TheFellowshipOfTheRing() {
           </li>
         ))}
       </ul>
+      <Image src="" />
+      <Link href={`/volumes/${volumes[1].slug}`}>Next</Link>
     </>
   );
 }

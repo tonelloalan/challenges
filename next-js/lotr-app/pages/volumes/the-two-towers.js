@@ -5,9 +5,7 @@ export default function TheTwoTowers() {
   const volume2 = volumes[1];
   return (
     <>
-      <Link href="/volumes">All Volumes</Link>
-      <Link href={`/volumes/${volumes[0].slug}`}>Previous</Link>
-      <Link href={`/volumes/${volumes[2].slug}`}>Next</Link>
+      <Link href="/volumes">← All Volumes</Link>
       <h1>{volumes[1].title}</h1>
       <p>{volumes[1].description}</p>
       <ul>
@@ -19,6 +17,8 @@ export default function TheTwoTowers() {
           </li>
         ))}
       </ul>
+      <Link href={`/volumes/${volumes[0].slug}`}>Previous</Link>
+      <Link href={`/volumes/${volumes[2].slug}`}>Next</Link>
     </>
   );
 }

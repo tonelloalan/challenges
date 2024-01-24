@@ -5,9 +5,7 @@ export default function TheReturnOfTheKing() {
   const volume3 = volumes[2];
   return (
     <>
-      <Link href="/volumes">All Volumes</Link>
-      <Link href={`/volumes/${volumes[1].slug}`}>Previous</Link>
-      <Link href="/volumes">Next</Link>
+      <Link href="/volumes">← All Volumes</Link>
       <h1>{volumes[2].title}</h1>
       <p>{volumes[2].description}</p>
       <ul>
@@ -19,6 +17,7 @@ export default function TheReturnOfTheKing() {
           </li>
         ))}
       </ul>
+      <Link href={`/volumes/${volumes[1].slug}`}>Previous</Link>
     </>
   );
 }

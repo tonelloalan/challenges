@@ -1,5 +1,6 @@
 import Link from "next/link.js";
 import { volumes } from "../../resources/lib/data.js";
+import Image from "next/image.js";
 
 export default function TheTwoTowers() {
   const volume2 = volumes[1];
@@ -17,6 +18,13 @@ export default function TheTwoTowers() {
           </li>
         ))}
       </ul>
+      <Image
+        src={`/images/${volume2.slug}.png`}
+        alt={`${volume2.title}`}
+        width={140}
+        height={230}
+      />
+      <br />
       <Link href={`/volumes/${volumes[0].slug}`}>Previous</Link>
       <Link href={`/volumes/${volumes[2].slug}`}>Next</Link>
     </>

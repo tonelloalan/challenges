@@ -1,5 +1,6 @@
 import Link from "next/link.js";
 import { volumes } from "../../resources/lib/data.js";
+import Image from "next/image.js";
 
 export default function TheReturnOfTheKing() {
   const volume3 = volumes[2];
@@ -17,6 +18,13 @@ export default function TheReturnOfTheKing() {
           </li>
         ))}
       </ul>
+      <Image
+        src={`/images/${volume3.slug}.png`}
+        alt={`${volume3.title}`}
+        width={140}
+        height={230}
+      />
+      <br />
       <Link href={`/volumes/${volumes[1].slug}`}>Previous</Link>
     </>
   );

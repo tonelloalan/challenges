@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function TheFellowshipOfTheRing() {
   const volume1 = volumes[0];
+  console.log();
   return (
     <>
       <Link href="/volumes">← All Volumes</Link>
@@ -18,7 +19,13 @@ export default function TheFellowshipOfTheRing() {
           </li>
         ))}
       </ul>
-      <Image src="" />
+      <Image
+        src={`/images/${volume1.slug}.png`}
+        alt={`${volume1.title}`}
+        width={140}
+        height={230}
+      />
+      <br />
       <Link href={`/volumes/${volumes[1].slug}`}>Next</Link>
     </>
   );

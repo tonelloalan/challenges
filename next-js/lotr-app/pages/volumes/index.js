@@ -20,7 +20,7 @@ export default function Volumes() {
           <Link href={`/volumes/${volumes[1].slug}`}>{volumes[1].title}</Link>
         </li>
         <li>
-          <Link href={`/volumes/${volumes[0].slug}`}>{volumes[2].title}</Link>
+          <Link href={`/volumes/${volumes[2].slug}`}>{volumes[2].title}</Link>
         </li>
       </ul>
     </>

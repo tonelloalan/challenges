@@ -6,6 +6,17 @@ import { useRouter } from "next/router";
 export default function Volumes() {
   const router = useRouter();
 
+  const getRandomElement = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
+  };
+
+  const handleRandomVolumeClick = () => {
+    if (confirm("Do you want to visit a random Volume?")) {
+      const randomVolume = getRandomElement(volumes);
+      router.push(`/volumes/${randomVolume.slug}`);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -23,6 +34,9 @@ export default function Volumes() {
           );
         })}
       </ul>
+      <button onClick={handleRandomVolumeClick}>
+        CLICK FOR A RANDOM VOLUME
+      </button>
     </>
   );
 }

@@ -13,12 +13,18 @@ export default function Volume() {
   if (!currentVolume) {
     return (
       <>
-        <h1>This Volume doesn't exist.</h1>
+        <h1>This Volume doesn´ t exist.</h1>
         <Link href="/volumes">← Back to all Volumes</Link>
       </>
     );
   } else {
     const { title, description } = currentVolume;
+
+    const currentIndex = volumes.findIndex((volume) => volume.slug === slug);
+
+    const previousVolume = currentIndex > 0 ? volumes[currentIndex - 1] : null;
+    const nextVolume =
+      currentIndex < volumes.length - 1 ? volumes[currentIndex + 1] : null;
 
     return (
       <>
@@ -44,7 +50,12 @@ export default function Volume() {
           height={230}
         />
         <br />
-        <Link href={`/volumes/${title.slug}`}>Next</Link>
+        <div>
+          {previousVolume && (
+            <Link href={`/volumes/${previousVolume.slug}`}>Previous</Link>
+          )}
+          {nextVolume && <Link href={`/volumes/${nextVolume.slug}`}>Next</Link>}
+        </div>
       </>
     );
   }

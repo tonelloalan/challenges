@@ -6,9 +6,11 @@ import Head from "next/head.js";
 
 export default function Volume() {
   const router = useRouter();
+  console.log("router: ", router);
+
   const { slug } = router.query;
+  console.log("routers query: ", slug);
   const currentVolume = volumes.find((volume) => volume.slug === slug);
-  console.log(currentVolume);
 
   if (!currentVolume) {
     return (

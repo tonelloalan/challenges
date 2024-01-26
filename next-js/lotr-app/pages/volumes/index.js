@@ -1,9 +1,22 @@
 import Link from "next/link";
 import Head from "next/head";
-import { introduction } from "../../resources/lib/data.js";
-import { volumes } from "../../resources/lib/data.js";
+import { introduction, volumes } from "../../resources/lib/data.js";
+import { useRouter } from "next/router";
 
 export default function Volumes() {
+  const router = useRouter();
+
+  const getRandomElement = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
+  };
+
+  const handleRandomVolumeClick = () => {
+    if (confirm("Do you want to visit a random Volume?")) {
+      const randomVolume = getRandomElement(volumes);
+      router.push(`/volumes/${randomVolume.slug}`);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -13,16 +26,17 @@ export default function Volumes() {
       <p>{introduction}</p>
       <h2>All Volumes</h2>
       <ul>
-        <li>
-          <Link href={`/volumes/${volumes[0].slug}`}>{volumes[0].title}</Link>
-        </li>
-        <li>
-          <Link href={`/volumes/${volumes[1].slug}`}>{volumes[1].title}</Link>
-        </li>
-        <li>
-          <Link href={`/volumes/${volumes[2].slug}`}>{volumes[2].title}</Link>
-        </li>
+        {volumes.map((volume) => {
+          return (
+            <li key={volume.id}>
+              <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
+            </li>
+          );
+        })}
       </ul>
+      <button onClick={handleRandomVolumeClick}>
+        CLICK FOR A RANDOM VOLUME
+      </button>
     </>
   );
 }

@@ -3,16 +3,12 @@
 import styled from "styled-components";
 
 // export a function which accepts a prop $isBlack and returns a div
-export default function BoxWithStyledComponents({ $isBlack }) {
+export default function BoxWithStyledComponents({ isBlack }) {
   return (
     // Inside of the return statement of your function, replace the div with StyledBox
     // Pass the $isBlack prop to the StyledBox component.
     // Check whether the $isBlack prop is true and set the correct background-color accordingly.
-    <StyledBox
-      className={`box-with-classname${
-        $isBlack ? " box-with-classname--black" : ""
-      }`}
-    ></StyledBox>
+    <StyledBox $isBlack={isBlack}></StyledBox>
   );
 }
 

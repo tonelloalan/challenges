@@ -29,6 +29,7 @@ const fetcher = async (url) => {
 // In the return statement, we directly use data.longitude and data.latitude instead of relying on a separate state.
 
 export default function ISSTracker() {
+  // mutate function passed to the destructuring assignment from useSWR
   const { data, error, isLoading, isValidating, mutate } = useSWR(
     URL,
     fetcher,
@@ -60,3 +61,4 @@ export default function ISSTracker() {
     </main>
   );
 }
+// ↑ mutate function passed to the onRefresh prop of the Controls component using an inline function

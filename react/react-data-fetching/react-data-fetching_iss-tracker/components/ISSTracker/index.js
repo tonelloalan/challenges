@@ -29,7 +29,13 @@ const fetcher = async (url) => {
 // In the return statement, we directly use data.longitude and data.latitude instead of relying on a separate state.
 
 export default function ISSTracker() {
-  const { data, error, isLoading, isValidating, mutate } = useSWR(URL, fetcher);
+  const { data, error, isLoading, isValidating, mutate } = useSWR(
+    URL,
+    fetcher,
+    {
+      refreshInterval: 5000, // Set refresh interval to 5 seconds (in milliseconds)
+    }
+  );
 
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;

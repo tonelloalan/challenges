@@ -1,6 +1,7 @@
 import useSWR from "swr";
 import Card from "../../components/Card";
 import Layout from "../../components/Layout";
+import { useRouter } from "next/router"; // Import useRouter from next/router
 
 // Fetcher function to handle data fetching with error checking
 const fetcher = async (url) => {
@@ -15,7 +16,9 @@ const fetcher = async (url) => {
 };
 
 export default function Character() {
-  const id = 1;
+  // Use the useRouter hook to access the id from router.query
+  const router = useRouter();
+  const { id } = router.query;
 
   // Use the useSWR hook to fetch data from the Star Wars API
   const { data, error } = useSWR(`https://swapi.dev/api/people/${id}`, fetcher);

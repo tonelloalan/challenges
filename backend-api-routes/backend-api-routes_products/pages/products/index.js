@@ -19,7 +19,9 @@ export default function ProductList() {
   return (
     <ul>
       {data.map((product) => (
-        <li key={product.id}>{product.name}</li>
+        <li key={product.id}>
+          <a href={`/products/${product.id}`}>{product.name}</a>
+        </li>
       ))}
     </ul>
   );

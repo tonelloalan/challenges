@@ -1,3 +1,5 @@
+// THIS API ROUTE RETURNS ALL LISTINGS
+
 import { getAllProducts } from "@/services/productServices"; // import getAllProducts
 
 // write a handler function which responds with...

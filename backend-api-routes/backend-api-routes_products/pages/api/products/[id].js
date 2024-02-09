@@ -1,3 +1,5 @@
+// THIS API ROUTE RETURNS A SINGLE LISTING
+
 import { getProductById } from "@/services/productServices"; // import getProductById function
 
 // write a handler function which responds with...

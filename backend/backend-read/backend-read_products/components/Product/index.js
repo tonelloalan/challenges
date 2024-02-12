@@ -17,6 +17,8 @@ export default function Product() {
     return;
   }
 
+  const { reviews } = data;
+
   return (
     <ProductCard>
       <h2>{data.name}</h2>
@@ -24,6 +26,15 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      <h3>Reviews:</h3>
+      {reviews &&
+        reviews.map((review) => (
+          <>
+            <h4>{review.title}</h4>
+            <p>{review.text}</p>
+            <p>Rating: {review.rating}</p>
+          </>
+        ))}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );

@@ -1,28 +1,31 @@
 import useSWR, { mutate } from "swr";
 
-export default function ProductForm() {
-  const { mutate } = useSWR("/api/products");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const productData = Object.fromEntries(formData);
+export default function ProductForm({
+  onSubmit,
+  formHeading = "Add a new Fish",
+}) {
+  // const { mutate } = useSWR("/api/products");
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target);
+  //   const productData = Object.fromEntries(formData);
 
-    console.log("productData: ", productData);
+  //   console.log("productData: ", productData);
 
-    const response = await fetch("/api/products", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(productData),
-    });
-    if (response.ok) {
-      mutate();
-    }
-  };
+  //   const response = await fetch("/api/products", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(productData),
+  //   });
+  //   if (response.ok) {
+  //     mutate();
+  //   }
+  // };
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="product-input">Enter a new product:</label>
+    <form onSubmit={onSubmit}>
+      <label htmlFor="product-input">{formHeading}</label>
       <br />
       <input
         type="text"
